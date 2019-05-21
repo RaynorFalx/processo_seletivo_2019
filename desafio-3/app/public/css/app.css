@@ -1,0 +1,35 @@
+.paginator-row {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-bar-row {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.first-card {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.second-card {
+    display: flex;
+    justify-content: center;
+}
+
+.third-card {
+    display: flex;
+    justify-content: flex-end;
+}
