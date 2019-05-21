@@ -12,10 +12,10 @@
 */
 
 //Listagem Inicial
-Route::get('/', 'HomeController@index');
+Route::get('', 'HomeController@index');
 
 //Filtro de Pesquisa
 Route::get('/search', 'HomeController@search');
 
 //Paginação
-Route::get('/paginator', 'HomeController@paginator');
+Route::get('/paginator/{page}', 'HomeController@paginator');

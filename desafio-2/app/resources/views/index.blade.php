@@ -54,8 +54,8 @@
                     </form>
                     <hr>
                     <!--Notícia-->
-                    @foreach($responseData['noticias'] as $idx => $noticia)
-                        @if($idx < 5)
+
+                    @foreach($responseData['data'] as $idx => $noticia)
                             <article class="box-noticia">
                                 <a href={{$noticia['url']}}>
                                     <figure>
@@ -82,20 +82,19 @@
                                 </a>
                             </article>
                             <hr>
-                        @endif
                     @endforeach
                     <!--Fim Notícia-->
 
                     <hr>
                     <ul class="pagination">
-                        <li class="active page-item">
-                            <a class="page-link" href="/paginator" name="page" id="1">1</a>
+                        <li class="page-item">
+                            <a class="page-link" href="/paginator/1" name="page">1</a>
                         </li>
                         <li class="page-item">
-                            <a class="page-link" href="/paginator">2</a>
+                            <a class="page-link" href="/paginator/2" name="page">2</a>
                         </li>
                         <li class="page-item">
-                            <a class="page-link" href="/paginator">3</a>
+                            <a class="page-link" href="/paginator/3" name="page">3</a>
                         </li>
                         <li class="page-item">
                             <a class="page-link" href="" aria-label="Next">
